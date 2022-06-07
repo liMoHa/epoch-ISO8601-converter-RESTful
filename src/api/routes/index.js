@@ -7,7 +7,6 @@ router.get("/:epoch", (req, res) => {
   try {
     const epoch = Number(req.params.epoch);
     const data = convertFromEpochToISO8601(epoch);
-
     res.json({
       status: 200,
       message: "OK",
