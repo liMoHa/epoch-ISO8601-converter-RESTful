@@ -15,8 +15,8 @@
     "url": "git+https://github.com/liMoHa/epoch-ISO8601-converter-RESTful.git"
   },
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app"
+    "start": "node src/app",
+    "dev": "nodemon src/app"
   },
   "dependencies": {
     "express": "^4.18.1"
