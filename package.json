@@ -1,24 +1,23 @@
 {
-  "name": "epoch-iso8601-converter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "epoch-iso8601-converter-RESTful",
+  "version": "0.0.0",
+  "description": "RESTful API server to convert from epoch to ISO8601",
+  "author": "yeonghaIm",
+  "license": "MIT",
+  "main": "app.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+  "bugs": {
+    "url": "https://github.com/liMoHa/epoch-ISO8601-converter-RESTful/issues"
   },
+  "homepage": "https://github.com/liMoHa/epoch-ISO8601-converter-RESTful#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liMoHa/epoch-ISO8601-converter.git"
+    "url": "git+https://github.com/liMoHa/epoch-ISO8601-converter-RESTful.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liMoHa/epoch-ISO8601-converter/issues"
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
   },
-  "homepage": "https://github.com/liMoHa/epoch-ISO8601-converter#readme",
   "dependencies": {
     "express": "^4.18.1"
   },
