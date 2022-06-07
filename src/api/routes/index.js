@@ -4,18 +4,22 @@ import { convertFromEpochToISO8601 } from "../../service/convertFromEpochToISO86
 const router = express.Router();
 
 router.get("/:epoch", (req, res) => {
-    try {
-      const epoch = Number(req.params.epoch);
-      const data = convertFromEpochToISO8601(epoch);
-      const result = {
-        status: res.statusCode,
-        message: "OK",
-        data,
-      };
-      res.json(result);
-    } catch (err) {
-      res.status(400).json({ message: "Please enter number" });
-    }
-});  
+  try {
+    const epoch = Number(req.params.epoch);
+    const data = convertFromEpochToISO8601(epoch);
 
-export {router};
+    res.json({
+      status: 200,
+      message: "OK",
+      data,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: 400,
+      message: "Please enter a number",
+      data: "null",
+    });
+  }
+});
+
+export { router };
